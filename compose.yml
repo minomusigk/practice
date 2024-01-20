@@ -1,0 +1,8 @@
+services:
+  java:
+    build: ./docker/java
+    ports:
+      - 8080:8080
+    tty: true
+    volumes:
+      - ./goodCodeBadCode/src:/usr/src:cached
